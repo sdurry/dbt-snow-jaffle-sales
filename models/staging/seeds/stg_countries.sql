@@ -11,3 +11,6 @@ with countries as (
     from countries
 
 )
+
+select *
+from renamed
