@@ -33,6 +33,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   jaffle_shop_mesh_sales:
+    +group: sales
     # Applies to all files under models/example/
     marts:
       +materialized: table
+
+seeds:
+  jaffle_shop_mesh_sales:
+     +schema: seed_data
