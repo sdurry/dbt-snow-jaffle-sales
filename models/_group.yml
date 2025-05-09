@@ -1,0 +1,7 @@
+groups:
+  - name: sales
+    owner:
+      # 'name' or 'email' is required; additional properties allowed
+      email: sales@jaffleshop.com
+      slack: ask-sales-data
+      github: sales-data
