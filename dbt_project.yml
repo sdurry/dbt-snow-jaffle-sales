@@ -37,6 +37,10 @@ models:
     # Applies to all files under models/example/
     marts:
       +materialized: table
+      +access: public
+    staging:
+      +materialized: table
+      +access: protected
 
 seeds:
   jaffle_shop_mesh_sales:
