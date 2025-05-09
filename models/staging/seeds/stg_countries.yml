@@ -1,0 +1,10 @@
+version: 2
+models:
+- name: stg_countries
+  description: This model serves as a staging layer for country data, renaming and
+    standardizing country codes and names for downstream use.
+  columns:
+  - name: country_code
+    description: The standardized code representing a country.
+  - name: country_name
+    description: The full name of the country.

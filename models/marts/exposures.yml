@@ -1,0 +1,19 @@
+version: 2
+
+exposures:
+  - name: Customer Sales
+    label: Jaffles by the Week
+    type: dashboard
+    maturity: high
+    url: https://bi.tool/dashboards/1
+    description: >
+      Did someone say "exponential growth"?
+
+    depends_on:
+      - ref('dim_customer_loyalty')
+      - ref('stg_stripe__payment')
+      - ref('country')
+
+    owner:
+      name: Sales Champion
+      email: sales@team
